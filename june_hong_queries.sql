@@ -1,7 +1,6 @@
 -- QUERY 1: trying to find the ideal track length
 -- find the names and duration (in milliseconds) of all tracks with popularity over 90 (out of 100)
 -- sorted from shortest song length to longest
-CREATE TABLE query1
 SELECT tracks.name, track_stats.duration_ms
 FROM track_stats
 JOIN tracks ON track_stats.track_id = tracks.track_id
